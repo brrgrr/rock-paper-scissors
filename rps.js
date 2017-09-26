@@ -11,7 +11,7 @@
 
 function playGame(choice) {
     with (document.game) {
-        comp = Math.round((Math.random() * 2) + 1);
+        comp = (Math.floor(Math.random() * 3)) + 1;
         var choicename;
         if (comp == 1) choicename = "rock";
         if (comp == 2) choicename = "paper";
